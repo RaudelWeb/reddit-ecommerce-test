@@ -200,7 +200,6 @@
             let currentProductCategory = product['category'];
             if( !(currentProductCategory in productsByCategory) ) {
                 productsByCategory[currentProductCategory] = [];
-                continue;
             }
 
             productsByCategory[currentProductCategory].push( Object.assign({}, product) );
