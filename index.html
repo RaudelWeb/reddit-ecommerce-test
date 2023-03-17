@@ -266,7 +266,7 @@
 
             const { id, title, images, price } = product;
 
-            console.log(`Product #${id} isFavorite: ${this.isProductInFavorites(id)}`)
+            //console.log(`Product #${id} isFavorite: ${this.isProductInFavorites(id)}`)
 
             return `
                 <div class="product__card" data-product-id="${id}">
@@ -319,7 +319,7 @@
 
         isProductInFavorites( productId ) {
             const lsData = JSON.parse( localStorage.getItem(this.#STORAGE_KEY) );
-            console.log(lsData);
+            //console.log(lsData);
             if( !lsData || !lsData[productId] ) return false;
 
             return lsData[productId]['isFavorite'] || false;
